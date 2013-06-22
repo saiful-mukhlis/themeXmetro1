@@ -12,45 +12,8 @@
 
 <div class="product-grid box-product" style="display: none;">
 	{foreach $product_list as $v}
-		<div class="box-product-item">
-			<div class="view-first">
-				<div class="view-content">
-					<div class="image">
-						<a href="{$v['product_link']}"><img src="{$store_image}/{$v['product_image_3']}"
-						alt="{$v['alt_product_image_3']}"></a>
-					</div>
-					<div class="bottom-block">
-					<div class="name">
-						<a href="{$v['product_link']}">{$v['product_name']}</a>
-					</div>
-					<div class="link-cart">
-						<form name="cart" method="post" action="{$home}cart">
-							<input type="hidden" name="submitted" value="1";=""> 
-							<input type="hidden" name="product_id"	value="{$v['product_id']}";=""> 
-							<input type="hidden" id="detail_qty" name="detail_qty"	value="1"> 
-							<a href="#" onClick="$(this).closest('form').submit(); return false;">Add to cart</a>
-						</form>
-					</div>
-					<div class="price">{$v['product_price_currency']}</div>
-					</div>
-				</div>
+		{include file='tmp/comp_box1_for.tpl' M='10' v=$v}
 
-				<div class="slide-block">
-					<div class="image-rating"></div>
-					<div class="btn-wish">
-						<a href="{$v['product_link']}">{$v['product_code']}</a>
-					</div>
-				<div class="btn-compare">
-					<form name="cart" method="post" action="{$home}cart">
-						<input type="hidden" name="submitted" value="1";=""> 
-						<input type="hidden" name="product_id"	value="{$v['product_id']}";=""> 
-						<input type="hidden" id="detail_qty" name="detail_qty"	value="1"> 
-						<a href="#" onClick="$(this).closest('form').submit(); return false;">Add to cart</a>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 {/foreach}
 </div>
 

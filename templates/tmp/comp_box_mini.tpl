@@ -10,7 +10,7 @@
     
 				
 {foreach from=$Q_P item=v}
-{include file='tmp/comp_box_mini_for.tpl' v=$v}
+{include file='tmp/comp_box1_for.tpl'  M='10' v=$v}
 {/foreach}
 				
 
