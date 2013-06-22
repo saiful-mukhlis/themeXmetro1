@@ -1,0 +1,645 @@
+<!-- start content -->
+<div class="product-info">
+	<div class="left">
+
+		<div class="image">
+			<div id="wrap" style="top: 0px; z-index: 9999; position: relative;">
+				<a href="{$store_image}/{$detail_product_image_ori}"
+					title="{$detail_product_name}" id="zoom01" class="cloud-zoom"
+					rel="position:'right', zoomWidth:320, zoomHeight:320, adjustX:10, adjustY:0, tint:'#FFFFFF', showTitle:false, softFocus:1, smoothMove:5, tintOpacity:0.8"
+					style="position: relative; display: block;"><img width="320"
+					height="320" src="{$store_image}/{$detail_product_image_5}"
+					title="{$detail_product_name}" alt="{$detail_product_name}"
+					id="image" style="display: block;"></a>
+				<div class="mousetrap"
+					style="background-image: url({$TEMPLATE_USE}/templates/img/blank.png); width: 320px; height: 320px; top: 0px; left: 0px; position: absolute; z-index: 9999; cursor: move;"></div>
+				<div class="mousetrap"
+					style="background-image: url({$TEMPLATE_USE}/templates/img/blank.png); width: 320px; height: 320px; top: 0px; left: 0px; position: absolute; z-index: 9999; cursor: move;"></div>
+			</div>
+		</div>
+
+
+
+		<div class="image-additional gallery">
+			<a href="{$store_image}/{$detail_product_image_ori}"
+				title="{$detail_product_name}"
+				rel="useZoom: 'zoom01', smallImage: '{$store_image}/{$detail_product_image_5}'"
+				class="cloud-zoom-gallery"><img width="102" height="102"
+				class="fade-image" src="{$store_image}/{$detail_product_image_5}"
+				title="{$detail_product_name}" alt="{$detail_product_name}"
+				style="opacity: 1;"></a>
+
+			<div class="clear"></div>
+		</div>
+
+	</div>
+	<div class="right">
+		<div class="breadcrumb">
+			<a href="{$home}">{$home_menu_name}</a> » {$detail_product_name}
+		</div>
+		<div class="price">
+			<b>Price:</b> {$detail_product_price_currency} <br />
+		</div>
+		<div class="description">
+			<span>Product Code:</span> {$detail_product_code}<br>
+		</div>
+
+
+
+		<div class="product-info-buttons">
+			<div class="input-qty">
+				<span>Qty:</span><input type="text" name="quantity" size="2"
+					value="1"> <input type="hidden" name="product_id" size="2"
+					value="43">
+			</div>
+			<a class="button" id="button-cart">Add to Cart</a>
+		</div>
+
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tabs" class="htabs">
+	<a href="#tab-description" style="display: inline;">Description</a> <a
+		href="#tab-related" style="display: inline;">Related Products
+		({$product_related |@count})</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tab-description" class="tab-content" style="display: none;">
+	<div>
+		<p>
+			<b>Intel Core 2 Duo processor</b>
+		</p>
+		<p>Powered by an Intel Core 2 Duo processor at speeds up to
+			2.16GHz, the new MacBook is the fastest ever.</p>
+		<p>
+			<b>1GB memory, larger hard drives</b>
+		</p>
+		<p>The new MacBook now comes with 1GB of memory standard and
+			larger hard drives for the entire line perfect for running more of
+			your favorite applications and storing growing media collections.</p>
+		<p>
+			<b>Sleek, 1.08-inch-thin design</b>
+		</p>
+		<p>MacBook makes it easy to hit the road thanks to its tough
+			polycarbonate case, built-in wireless technologies, and innovative
+			MagSafe Power Adapter that releases automatically if someone
+			accidentally trips on the cord.</p>
+		<p>
+			<b>Built-in iSight camera</b>
+		</p>
+		<p>Right out of the box, you can have a video chat with friends or
+			family,2 record a video at your desk, or take fun pictures with Photo
+			Booth</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tab-attribute" class="tab-content" style="display: block;">
+	<table class="attribute">
+		<thead>
+			<tr>
+				<td colspan="2">Memory</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>test 1</td>
+				<td>8gb</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<td colspan="2">Processor</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>No. of Cores</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tab-review" class="tab-content" style="display: none;">
+	<div id="review">
+		<div class="review-list">
+			<div class="author">
+				<b>cool</b> on 10/01/2013
+			</div>
+			<div class="rating">
+				<img src="catalog/view/theme/metroshop/image/stars-5.png"
+					alt="1 reviews">
+			</div>
+			<div class="text">nice tool! sdadsad sadsad</div>
+		</div>
+		<div class="pagination">
+			<div class="results">Showing 1 to 1 of 1 (1 Pages)</div>
+		</div>
+	</div>
+	<h2 id="review-title">Write a review</h2>
+	<b>Your Name:</b><br> <input type="text" name="name" value="">
+	<br> <br> <b>Your Review:</b>
+	<textarea name="text" cols="40" rows="8" style="width: 98%;"></textarea>
+	<span style="font-size: 11px;"><span style="color: #FF0000;">Note:</span>
+		HTML is not translated!</span><br> <br> <b>Rating:</b> <span>Bad</span>&nbsp;
+	<input type="radio" name="rating" value="1"> &nbsp; <input
+		type="radio" name="rating" value="2"> &nbsp; <input
+		type="radio" name="rating" value="3"> &nbsp; <input
+		type="radio" name="rating" value="4"> &nbsp; <input
+		type="radio" name="rating" value="5"> &nbsp;<span>Good</span><br>
+	<br> <b>Enter the code in the box below:</b><br> <input
+		type="text" name="captcha" value=""> <br> <img
+		src="index.php?route=product/product/captcha" alt="" id="captcha"><br>
+	<br>
+	<div class="buttons">
+		<div class="right">
+			<a id="button-review" class="button">Continue</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tab-related" class="tab-content" style="display: none;">
+	<div class="box-product">
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=28"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_dell_inspiron_one_2320_2320_0701_1-188x188.jpg"
+							alt="Desktop N53"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=28">Desktop
+								N53</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('28');">Add to
+							Cart</div>
+						<div class="price">$119.50</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('28');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('28');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=30"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_apple_macbook_air_13_mid_2012_7-188x188.jpg"
+							alt="Notebook N42"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=30">Notebook
+								N42</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('30');">Add to
+							Cart</div>
+						<div class="price">
+							<span class="price-old">$119.50</span> <span class="price-new">$96.00</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('30');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('30');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=31"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f02_acer_aspire_z5801_24_do_shser_001_3-188x188.jpg"
+							alt="Desktop N64"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=31">Desktop
+								N64</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('31');">Add to
+							Cart</div>
+						<div class="price">$96.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('31');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('31');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=40"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_nokia_lumia_820_1-188x188.jpg"
+							alt="Phone N64"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=40">Phone
+								N64</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('40');">Add to
+							Cart</div>
+						<div class="price">$120.68</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('40');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('40');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=42"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f03_apple_ipad_wi_fi_5-188x188.jpg"
+							alt="Tablet H54"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=42">Tablet
+								H54</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('42');">Add to
+							Cart</div>
+						<div class="price">
+							<span class="price-old">$636.50</span> <span class="price-new">$401.50</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating">
+						<img src="catalog/view/theme/metroshop/image/stars-5.png"
+							alt="1 reviews">
+					</div>
+					<div class="btn-wish" onclick="addToWishList('42');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('42');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=44"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_lenovo_ideapad_s110_59321422-188x188.jpg"
+							alt="Desktop N525"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=44">Desktop
+								N525</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('44');">Add to
+							Cart</div>
+						<div class="price">$1,177.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('44');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('44');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=45"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_monoblok_apple_imac_mc814rs_a_27-188x188.jpg"
+							alt="Desktop N2"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=45">Desktop
+								N2</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('45');">Add to
+							Cart</div>
+						<div class="price">$2,000.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('45');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('45');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=47"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_dell_inspiron_7520_7520_9124_9-188x188.jpg"
+							alt="Notebook N453"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=47">Notebook
+								N453</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('47');">Add to
+							Cart</div>
+						<div class="price">$119.50</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('47');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('47');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=50"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_asus_et2012aukb_20-188x188.jpg"
+							alt="Desktop N264"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=50">Desktop
+								N264</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('50');">Add to
+							Cart</div>
+						<div class="price">$96.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('50');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('50');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=51"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f01_lenovo_5-188x188.jpg"
+							alt="Desktop N26356"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=51">Desktop
+								N26356</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('51');">Add to
+							Cart</div>
+						<div class="price">$96.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('51');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('51');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-product-item">
+			<div class="view-first">
+				<div class="view-content">
+					<div class="image">
+						<a
+							href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=52"><img
+							src="http://www.metro-oc.any-themes.com/metroshop2/image/cache/data/f03_nikon_d3200_kit_18_105_vr_2-188x188.jpg"
+							alt="Camera D535"></a>
+					</div>
+
+					<div class="bottom-block">
+						<div class="name">
+							<a
+								href="http://www.metro-oc.any-themes.com/metroshop2/index.php?route=product/product&amp;product_id=52">Camera
+								D535</a>
+						</div>
+						<div class="link-cart" onclick="addToCart('52');">Add to
+							Cart</div>
+						<div class="price">$96.00</div>
+					</div>
+				</div>
+
+				<div class="slide-block">
+					<div class="image-rating"></div>
+					<div class="btn-wish" onclick="addToWishList('52');">Add to
+						Wish List</div>
+					<div class="btn-compare" onclick="addToCompare('52');">Add to
+						Compare</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<!-- end content -->
