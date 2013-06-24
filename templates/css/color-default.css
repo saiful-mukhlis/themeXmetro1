@@ -308,10 +308,22 @@ tab-content {
 a .button-box{
 	color: #fff;
 }
+a .button-box.button-boxb{
+	background-color: #ffaa31;
+}
+a .button-box.button-boxa{
+	background-color: #6cbe42;
+}
 a .button-box:hover{
 	background-color: #58BAE9;
 }
+
 /* content */
+#content h1{background-color: #e2e3e1;}
+#content a{color: #61abe7;}
+#content .breadcrumb a{color: #fff;}
+#content .box-product a{color: #fff;}
+#content .text{background-color: #fff;}
 #content .content {
 	background:#fff;
 }
@@ -591,6 +603,7 @@ a .button-box:hover{
 	color:white;	
 	background:#222;
 }
+
 
 
 #searchresults {border-color:#ccc; background-color:#fff;}

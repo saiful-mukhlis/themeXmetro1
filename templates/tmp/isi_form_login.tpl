@@ -5,11 +5,11 @@
           <p>{$TEXT_NOTE_LOGIN}</p>
           
           {if $error_login eq 1 && $warning_login neq ''}
-				<div class="box alert-box">{$warning_login}</div>
+				<div class="box alert-box" ><div style="background-image: url('{$TEMPLATE_USE}/templates/img/theme/cross32.png');height: 32px;width: 32px;float: left;margin-top: -5px;margin-right: 15px;"></div>{$warning_login}</div>
 			{/if}
 			{if $error_login eq 0 && $warning_login neq ''}
 				<img src="{$TEMPLATE_USE}/templates/{$TEMPLATE_IMAGES_USED}/spacer.png" border=0 onLoad="setTimeout('location.href=\'{$home}\'',1000);" />
-				<div class="box success-box">{$warning_login}</div>
+				<div class="box success-box"><div style="background-image: url('{$TEMPLATE_USE}/templates/img/theme/ok30.png');height: 30px;width: 40px;float: left;margin-top: -5px;margin-right: 15px;"></div>{$warning_login}</div>
 			{/if}
           
           

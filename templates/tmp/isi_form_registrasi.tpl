@@ -236,6 +236,12 @@ button.datepick-cmd {
 div.alert-box {
 border: 1px solid #e5af51;
 color: #ca6b1c;
+background-color: rgba(255, 247, 241, 0.901961);	
+}
+div.success-box {
+border: 1px solid #6cbe42;
+color: #6cbe42;
+background-color: rgba(230, 255, 229, 0.901961);
 }
 div.box {
 font-size: 108.3%;
@@ -250,11 +256,11 @@ border-radius: 6px;
 </style>
 
 {if $error_signup eq 1 && $warning_signup neq ''}
-				<div class="box alert-box">{$warning_signup}</div>
+				<div class="box alert-box"><div style="background-image: url('{$TEMPLATE_USE}/templates/img/theme/cross32.png');height: 32px;width: 32px;float: left;margin-top: -5px;margin-right: 15px;"></div{$warning_signup}</div>
 			{/if}
 {if $error_signup eq 0 && $warning_signup neq ''}
 				<img src="{$TEMPLATE_USE}/templates/{$TEMPLATE_IMAGES_USED}/spacer.png" border=0 onLoad="setTimeout('location.href=\'{$home}\'',1000);" />
-				<div class="box success-box">{$warning_signup}</div>
+				<div class="box success-box"><div style="background-image: url('{$TEMPLATE_USE}/templates/img/theme/ok30.png');height: 30px;width: 40px;float: left;margin-top: -5px;margin-right: 15px;"></div>{$warning_signup}</div>
 			{/if}			
 
 <form name="signup" method="post" action="{$home}{$Q_ACTION}">

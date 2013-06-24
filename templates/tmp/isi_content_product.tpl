@@ -1,10 +1,26 @@
+{literal}
+<style>
+<!--
+#content h1{padding: 10px;margin-bottom: 0px;padding-bottom: 0px;}
+-->
+</style>
+{/literal}
 <!-- start content -->
 <div class="product-filter clearfix">
+	<h1>
+	{if $page_menu_name==null}
+	Product
+	{else}
+	{$page_menu_name}
+	{/if}
 	<div class="display">
 		<b>Display:</b> 
 		<a class="list-switch" title="List" onclick="display('list');"></a>
 		<a class="grid-switch" title="Grid"  onclick="display('grid');"></a>
 	</div>
+	</h1>
+
+	
 </div>
 
 

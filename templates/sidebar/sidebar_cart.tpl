@@ -4,6 +4,7 @@
 	<div class="box-content">
 		{if $qty_cart eq '0'}
 			<div class="box-category">
+				<div style="text-align: center;"><img style="margin: 20px;margin-left: auto;margin-right: auto;" src="{$TEMPLATE_USE}/templates/img/theme/cart48.png" alt="" /></div>
 				<p>{$TEXT_CART_EMPTY_DESC}</p>
 			</div>
 		{else}

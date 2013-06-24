@@ -1,8 +1,9 @@
-<h2>
-<a href="{$home}">{$home_menu_name}</a> 
-		{if $detail_content_title eq ''}
-		&rsaquo; {$page_menu_name}
+<ul class="breadcrumb">
+	<li><a href="{$home}">Home</a></li>
+	{if $detail_content_title eq ''}
+		<li><a>{$page_menu_name}</a></li>
 		{else}
-		&rsaquo; <a href="{$page_menu_link}">{$page_menu_name}</a> &rsaquo;  <a href="{$link_third}.html">{$detail_content_title}</a>
-		{/if}
-</h2>
+		<li><a href="{$page_menu_link}">{$page_menu_name}</a></li> 
+		<li><a href="{$link_third}.html">{$detail_content_title}</a></li>
+	{/if}
+</ul>

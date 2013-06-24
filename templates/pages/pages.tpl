@@ -13,6 +13,7 @@
        <div id="notification" ></div>
        <div id="content" >
        {include file='tmp/comp_breadcrumb_page.tpl'}
+       <h1>{$page_menu_name}</h1>
        {include file='tmp/isi_content_page.tpl'}
        </div>
 </div>

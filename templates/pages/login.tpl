@@ -13,6 +13,7 @@
 
 		<div id="content">
 		{include file='tmp/comp_breadcrumb.tpl' Q_N=$TEXT_TITLE_LOGIN}
+		<h1>{$TEXT_TITLE_LOGIN}</h1>
 		{include file='tmp/isi_content_login.tpl'}
 		</div>
 	</div>
